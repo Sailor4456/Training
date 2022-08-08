@@ -1,0 +1,44 @@
+name: Sonar-Development
+on:
+  push:
+    branches: development
+  workflow_dispatch:
+jobs:
+  build:
+    name: Sonar Report Build
+    runs-on: [self-hosted, Linux]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: sonar build
+        run: sonar-scanner
+  copy:
+    name: copy
+    runs-on: [self-hosted, Linux]
+    needs: build
+    steps:
+    - name: copy-repo
+      run: |
+        sudo rm -rfv /var/www/html/${{ github.event.repository.name }}
+          cd ..
+          sudo cp -r ${{ github.event.repository.name }} /var/www/html/
+  cleanup: 
+    name: cleanup
+    runs-on: [self-hosted, Linux]
+    needs: copy
+    steps:
+      - name: repo-clean
+        run: |
+          cd ..
+          pwd
+          ls -la
+          rm -rfv ${{ github.event.repository.name }}
+  Json:
+    runs-on: [self-hosted, Linux]
+    needs: cleanup
+    steps:
+      - name: Run a node app to generate report
+        run: |
+          cd /var/www/html
+          sudo node app.js ${{ github.event.repository.name }}
