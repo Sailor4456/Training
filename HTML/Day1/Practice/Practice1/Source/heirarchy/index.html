@@ -1,0 +1,63 @@
+<style>
+  .body{
+      margin: 0px;
+      padding: 0px;
+  }
+  .parent {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: aliceblue;
+  }
+  .childOne {
+      width: 33%;
+      margin: 10px;
+      background-color: white;
+  }
+  .childOne ul {
+      line-height: 280%;
+  }
+  .childOne ol {
+      line-height: 140%;
+  }
+  .btn{
+      width: 100%;
+  }
+
+</style>
+
+<div class="parent">
+  <div class="childOne">
+      <ul>
+          <li>Mobile Department</li>
+      <ol>
+          <li>Manager at React</li>
+          <li>Software Developer react</li>
+      </ol>
+      </ul>
+  </div>
+  <div class="childOne" >
+      <ul style="list-style:square">
+      <li>Web Department</li>
+      <ol>
+        <li>Manager at DotNet</li>
+        <li>Sr. Software Developer .net</li>
+          <ol type="a">  
+              <li>Jr. Software Developer .net</li>
+              <li>Trainee .net</li>
+          </ol>
+      </ol>
+      </ul>
+  </div>
+  <div class="childOne">
+      <ul style="list-style:circle">
+      <li>HR Department</li>
+      <ol>
+        <li>Manager at HR</li>
+        <li>Sr. Talent Acquisition hr</li>
+        <li>Jr. Hr</li>
+      </ol>
+      </ul>
+  </div>
+</div>
