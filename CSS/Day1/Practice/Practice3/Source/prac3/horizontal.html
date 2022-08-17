@@ -1,0 +1,106 @@
+<style>
+    * {
+        background-color: rgb(136, 136, 236);
+    }
+
+    .container{
+        background-color: rgb(225, 231, 236);
+        display: flex;
+        align-content: flex-start;
+        justify-content:space-between;
+    }
+    .container > li{
+        background-color: rgb(225, 231, 236);
+    }
+    @media (max-width:800px){
+        .container{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+</style>
+
+<div>
+<ul>
+    <li>India</li>
+    <ol type="A">
+        <li>Gujarat</li>
+        <ol type="a" style="border:1px solid black;" class="container">
+            <li>Ahmedabad</li>
+            <li>Gandhinagar</li>
+            <li>Rajkot</li>
+            <li>Surat</li>
+            <li>Vadodara</li>
+            <li>Junagadh</li>
+        </ol>
+        <li>Rajasthan</li>
+            <ol type="a" style="border:1px solid black"  class="container">
+                <li>Jaipur</li>
+                <li>Udaipur</li>
+                <li>Ajmer</li>
+                <li>Jodhpur</li>
+                <li>Kota</li>
+                <li>Bikaner</li>
+                <li>Jaisalmer</li>
+            </ol>
+        <li>Maharashtra</li>
+        <ol type="a" style="border:1px solid black"  class="container">
+            <li>Mumbai</li>
+            <li>Pune</li>
+            <li>Nasik</li>
+            <li>Nagpur</li>
+            <li>Aurangabad</li>
+            <li>Thane</li>
+            <li>Satara</li>
+        </ol>
+        <li>Uttar Pradesh</li>
+        <ol type="a" style="border:1px solid black"  class="container">
+            <li>Lucknow</li>
+            <li>Noida</li>
+            <li>Kanpur</li>
+            <li>Prayagraj</li>
+            <li>Mirzapur</li>
+            <li>Jhansi</li>
+            <li>Meerut</li>
+        </ol>
+    </ol>
+    <li>USA</li>
+    <ol type="A">
+        <li>Texas</li>
+        <ol type="a" style="border:1px solid black;" class="container">
+            <li>Austin</li>
+            <li>Houston</li>
+            <li>Alpine</li>
+            <li>Del Rio</li>
+            <li>El Paso</li>
+            <li>San Antonio</li>
+        </ol>
+        <li>Arizona</li>
+            <ol type="a" style="border:1px solid black"  class="container">
+                <li>Chandler</li>
+                <li>Phoenix</li>
+                <li>Florence</li>
+                <li>Casa Grande</li>
+            </ol>
+    </ol>
+    <li>Canada</li>
+    <ol type="A">
+        <li>Nova Scotia</li>
+        <ol type="a" style="border:1px solid black;" class="container">
+            <li>Sydney</li>
+            <li>Liverpool</li>
+            <li>Yarmouth</li>
+            <li>Kentville</li>
+            <li>Shelburne</li>
+        </ol>
+        <li>Alberta</li>
+            <ol type="a" style="border:1px solid black"  class="container">
+                <li>Edmonton</li>
+                <li>Brooks</li>
+                <li>St. Albert</li>
+                <li>Red Deer</li>
+                <li>Fort McMurray</li>
+            </ol>
+    </ol>
+</ul>
+</div>
