@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .HeaderContainer {
+      width: 100%;
+      height: 600px;
+      background-image: url(/Top-Bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .mid {
+      padding-top: 30px;
+      max-width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid red;
+    }
+
+    .right {
+      color: #fff;
+      word-spacing: 20px;
+    }
+
+    .right>a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .setTitle {
+      color: #fff;
+      height: 500px;
+      text-align: center;
+      padding-top: 180px;
+      font-size: large;
+      word-spacing: 8px;
+      line-height: 35px;
+    }
+
+    .section1 {
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sectionContent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .content>img,
+    h5,
+    p {
+      padding: 10px;
+    }
+
+    .content>img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: large;
+    }
+
+    .gallery {
+      padding: 50px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(224, 213, 213);
+    }
+
+    .galleryContent {
+      width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (max-width:950px) {
+      .galleryContent>div {
+        height: 300px;
+        width: 350px;
+      }
+
+      .galleryContent {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+
+      .sectionContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+
+    .gallery>img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .social {
+      padding: 80px;
+    }
+
+    .social>button {
+      padding: 8px;
+    }
+
+
+    .contactForm{
+      background-color: rgb(226, 111, 130);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  .form-inline {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.footer{
+  background-color: rgb(0, 0, 0) ;
+  max-width: 100%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  word-spacing: 20px;
+  padding: 10px;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- header starts here-->
+  <div class="HeaderContainer">
+    <div class="setHeader">
+
+      <div class="mid">
+        <div class="left">
+          <img src="/logo-top.png" />
+        </div>
+
+        <div class="right">
+          <a href="#">HOME</a>
+          <a href="about.html">ABOUT-US</a>
+          <a href="social.html">SOCIAL</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="setTitle">
+      <h1>Premium Quality & Tradition</h1>
+      <i>SINCE 1978</i>
+    </div>
+
+  </div>
+  <!--header ends here-->
+
+  <!--meet our team section starts here-->
+  <div class="section1">
+    <div class="title">
+      <h2>Meet Our Team</h2>
+    </div>
+    <div class="sectionContent">
+      <div class="content">
+        <img src="/profile-1.jpg" />
+        <h5>Dennis Kim</h5>
+        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+      </div>
+      <div class="content">
+        <img src="/profile-2.jpg" />
+        <h5>Sara McCoy</h5>
+        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+      </div>
+      <div class="content">
+        <img src="/profile-3.jpg" />
+        <h5>Emily Porter</h5>
+        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+      </div>
+    </div>
+  </div>
+  <!--meet our team section ends here-->
+
+  <!--image gallery section starts here-->
+  <div class="gallery">
+    <div class="galleryContent">
+      <div><img src="/portfolio-1.jpg" /></div>
+      <div><img src="/portfolio-2.jpg" /></div>
+      <div><img src="/portfolio-3.jpg" /></div>
+      <div><img src="/portfolio-4.jpg" /></div>
+    </div>
+    <div class="social"><button>FOLLOW US ON INSTAGRAM</button></div>
+  </div>
+  <!--image gallery section ends here-->
+
+  <!--form section starts here-->
+  <div class="contact">
+    <div class="contactForm">
+      <div>
+        <h2>CONTACT US</h2>
+      </div>
+      <form class="form-inline" action="/action_page.php">
+        <div><input type="email" id="email" placeholder="FIRST NAME" name="email">
+        <input type="password" id="pwd" placeholder="LAST NAME" name="pswd"></div>
+        <div><input type="email" id="email" placeholder="email.com" name="email">
+        <input type="password" id="pwd" placeholder="Mobile Number" name="pswd"></div>
+        <div><input type="email" id="email" placeholder="Message" name="email"></div>
+        <div><input type="submit" value="SEND"></div>
+      </form>
+    </div>
+  </div>
+  <!--form section ends here-->
+
+  <!--footer starts here-->
+  <div class="footer">
+    <a>HOME</a>
+    <a>ABOUT-US</a>
+    <img src="/logo-footer.png" />
+    <a>SOCIAL</a>
+    <a>CONTACT</a>
+  </div>
+  <!--footer ends here-->
+</body>
+
+</html>

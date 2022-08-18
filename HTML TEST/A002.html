@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  <style>
+    .tab{
+      border-collapse: collapse;
+      text-align: right;
+      max-width: 800px;
+      margin: auto;
+    }
+    td{
+      width: 200px;
+      font-size: large;
+      line-height: 30px;
+      padding-right: 15px;
+    }
+    .mid{
+      text-align: center;
+    }
+    tr > .p{
+      padding-right: 35px;
+    }
+    tr > .q{
+      padding-right: 50px;
+    }
+  </style>
+  </head>
+
+  <body>
+<div>
+  <table class="tab" border="1px solid black">
+    <tr>
+      <td>Country</td>
+      <td colspan="2" class="mid">Population (In Crores)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">INDIA</td>
+      <td>1998</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="p">USA</td>
+      <td>1998</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="p q">UK</td>
+      <td>1998</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>35</td>
+    </tr>
+  </table>
+</div>
+  </body>
+</html>
