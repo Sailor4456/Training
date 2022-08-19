@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Learning Site</title>
+</head>
+<body>
+  <!--navbar starts here-->
+  <div class="navBar">
+    <div class="rxLogo"><img src="/public/rx.jpg" alt="radixweb logo" height="100px" width="100px" /></div>
+    <div class="menuItem">
+      <a href="" class="active" style="border-radius: 15px;">HTML</a>
+      <a href="">CSS</a>
+      <a href="">Bootstrap</a>
+      <a href="">Tailwind</a>
+      <a href="">Javascript</a>
+      <a href="">Typescript</a>
+      <a href="">Node JS</a>
+    </div>
+  </div>
+  <!--navbar ends here-->
+  <!--site content starts here-->
+  <div class="siteContent">
+    <!--sidebar inside site starts here-->
+
+    <div class="sideBar">
+      <button type="button" class="collapse">Day/Module 1</button>
+      <div class="in">
+
+        <button type="button" class="collapse">Practice Exercise</button>
+
+        <div class="in"><button type="button" class="collap">prac 1</button>
+          <button type="button" class="collap">prac 2</button>
+        </div>
+
+        <button type="button" class="collapse">Assignment</button>
+
+        <div class="in"><button type="button" class="collap">assign 1</button>
+          <button type="button" class="collap">assign 2</button>
+        </div>
+
+      </div>
+
+      <button type="button" class="collapse">Day/Module 2</button>
+      <div class="in">
+
+        <button type="button" class="collapse">Practice Exercise</button>
+
+        <div class="in"><button type="button" class="collap">prac 1</button>
+          <button type="button" class="collap">prac 2</button>
+        </div>
+
+        <button type="button" class="collapse">Assignment</button>
+
+        <div class="in"><button type="button" class="collap">assign 1</button>
+          <button type="button" class="collap">assign 2</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!--sidebar inside site ends here-->
+    <!--showing site content starts here-->
+    <div class="mainContent">
+      <img src="/public/rx.jpg" height="80%" />
+    </div>
+    <!--showing site content ends here-->
+  </div>
+  <!--site content ends here-->
+  <script>
+    var coll = document.getElementsByClassName("collapse");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var cnt = this.nextElementSibling;
+        if (cnt.style.display === "block") {
+          cnt.style.display = "none";
+        } else {
+          cnt.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
