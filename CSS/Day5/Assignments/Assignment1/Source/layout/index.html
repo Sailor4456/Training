@@ -25,7 +25,6 @@
       margin: auto;
       display: flex;
       justify-content: space-between;
-      border: 1px solid red;
     }
 
     .right {
@@ -46,6 +45,9 @@
       font-size: large;
       word-spacing: 8px;
       line-height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .section1 {
@@ -128,9 +130,12 @@
       height: 150px;
       width: 150px;
     }
+    .hl:hover img{
+      opacity: 0.3;
+    }
 
     .social {
-      padding: 80px;
+      padding: 80px 80px 20px 80px;
     }
 
     .social>button {
@@ -138,49 +143,81 @@
     }
 
 
-    .contactForm{
+    .contactForm {
       background-color: rgb(226, 111, 130);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .form-inline {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-  .form-inline {  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
+    .form-inline input {
+      vertical-align: middle;
+      margin: 10px 15px 10px 5px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
 
 
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
-  
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
+    @media (max-width: 800px) {
+      .form-inline input {
+        margin: 10px 0;
+      }
 
-.footer{
-  background-color: rgb(0, 0, 0) ;
-  max-width: 100%;
-  margin: auto;
-  color: #fff;
-  text-align: center;
-  word-spacing: 20px;
-  padding: 10px;
-}
+      .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    .footer {
+      background-color: rgb(0, 0, 0);
+      max-width: 100%;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      word-spacing: 20px;
+      padding: 10px;
+    }
+
+    .midTitle {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+
+    .line {
+      height: 3px;
+      width: 65px;
+      background: rgb(187, 186, 186);
+      margin: 15px;
+    }
+
+    .button {
+      background-color: #222dc6;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .button2 {
+      width: 100%;
+    }
   </style>
 </head>
 
@@ -207,7 +244,11 @@
 
     <div class="setTitle">
       <h1>Premium Quality & Tradition</h1>
-      <i>SINCE 1978</i>
+      <div class="midTitle">
+        <div class="line"></div>
+        <div><i>SINCE 1978</i></div>
+        <div class="line"></div>
+      </div>
     </div>
 
   </div>
@@ -244,10 +285,12 @@
   <!--image gallery section starts here-->
   <div class="gallery">
     <div class="galleryContent">
-      <div><img src="/portfolio-1.jpg" /></div>
-      <div><img src="/portfolio-2.jpg" /></div>
-      <div><img src="/portfolio-3.jpg" /></div>
-      <div><img src="/portfolio-4.jpg" /></div>
+      <div class="hl">
+        <img src="/portfolio-1.jpg" />
+      </div>
+      <div class="hl"><img src="/portfolio-2.jpg" /></div>
+      <div class="hl"><img src="/portfolio-3.jpg" /></div>
+      <div class="hl"><img src="/portfolio-4.jpg" /></div>
     </div>
     <div class="social"><button>FOLLOW US ON INSTAGRAM</button></div>
   </div>
@@ -261,11 +304,13 @@
       </div>
       <form class="form-inline" action="/action_page.php">
         <div><input type="email" id="email" placeholder="FIRST NAME" name="email">
-        <input type="password" id="pwd" placeholder="LAST NAME" name="pswd"></div>
+          <input type="password" id="pwd" placeholder="LAST NAME" name="pswd">
+        </div>
         <div><input type="email" id="email" placeholder="email.com" name="email">
-        <input type="password" id="pwd" placeholder="Mobile Number" name="pswd"></div>
+          <input type="password" id="pwd" placeholder="Mobile Number" name="pswd">
+        </div>
         <div><input type="email" id="email" placeholder="Message" name="email"></div>
-        <div><input type="submit" value="SEND"></div>
+        <button class="button button2">SEND</button>
       </form>
     </div>
   </div>
