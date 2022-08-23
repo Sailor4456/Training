@@ -13,9 +13,7 @@
         box-shadow: 5px 10px 18px #888888;
     }
     .left-contain{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
+        width: 25%;
         background-color: rgba(214, 209, 209, 0.904);
         padding-left: 20px;
         background-image: -webkit-linear-gradient(320deg, #afc6db 40%, rgba(214, 209, 209, 0.904) 15%);
@@ -58,6 +56,43 @@
     .et{
         margin-top: -38px;
     }
+
+
+
+    button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#hEdu{
+    display: none;
+}
+#hWork{
+    display: none;
+}
+#hProject{
+    display: none;
+}
+#hContact{
+    display: none;
+}
+#hPs{
+    display: none;
+}
+#hAchievements{
+    display: none;
+}
+#hCertificate{
+    display: none;
+}
+
+
+
 </style>
 
 
@@ -65,15 +100,22 @@
     <!-- Left Section Starts -->
     <div class="left-contain">
         <img src="../HTML/public/a2.png" width="120px" height="120px" style="padding: 40px;" alt="profile image"/>
+        
+        <!--contact starts here-->
         <div class="contact">
-            <h4>CONTACTS</h4>
-            <span><strong>P:</strong>  <em>+91 7405146948</em></span>
+            <h4><button onclick="contactFunction()">CONTACT</button></h4>
+            <div id="hContact">
+            <span><strong>P:</strong>  <em>+91 7405146948</em></span><br/>
             <span><strong>E:</strong> <em>info.vipul1201@gmail.com</em></span>
             <strong>LinkedIn:</strong> <em>https://www.linkedin.com/in/vipul-vaghela/</em>
         </div>
+        </div>
+        <!--contact ends here-->
+
+        <!--personal skills starts here-->
         <div>
-            <h4>PERSONAL SKILLS</h4>
-            <ul class="ps">
+            <h4><button onclick="pskillsFunction()">PERSONAL SKILLS</button></h4>
+            <ul class="ps" id="hPs">
                 <li>HTML5-CSS3</li>
                 <li>JAVASCRIPT</li>
                 <li>PHP</li>
@@ -85,22 +127,30 @@
                 <li>MS EXCEL</li>
             </ul>
         </div>
+        <!--personal skills ends here-->
+
+        <!--cerification starts here-->
         <div>
-            <h4>CERTIFICATIONS</h4>
-            NPTEL
+            <h4><button onclick="certificateFunction()">CERTIFICATIONS</button></h4>
+            <div id="hCertificate">NPTEL
             <ul class="ps ">
                 <li>The joy of Computing using Python (Jan-April 2020)</li>
                 <li>IIT Madras, India</li>
                 <li>Scored 95%</li>
             </ul>
         </div>
+        </div>
+        <!--cerification ends here-->
+
+        <!--achievements starts here-->
         <div>
-            <h4>ACHIEVEMENTS</h4>
-            <ul class="ps">
+            <h4><button onclick="achieveFunction()">ACHIEVEMENTS</button></h4>
+            <ul class="ps" id="hAchievements">
                 <li>Participation in Hackthon, Let's Hack 2.0. (Runner's Up)</li>
                 <li>Participation in Marathon and Cross Country at National Sports Meet 2012(Lucknow).</li>
             </ul>
         </div>
+        <!--achievements ends here-->
     </div>
     <!-- Left Section Ends -->
     <!-- Right Section Begins -->
@@ -109,8 +159,8 @@
         <h4 style="margin-top: -10px;">FULL STACK DEVELOPER</h4>
         <!-- Education Section Begins -->
         <div class="lr ">
-            <h4>EDUCATION</h4>
-                <div class="edu et">
+            <h4><button onclick="eduFunction()">EDUCATION</button></h4>
+                <div class="edu et" id="hEdu"> 
                     <div><h4 class="clr">PANDIT DEENDAYAL ENERGY UNIVERSITY.</h4>
                     <ul class="ct">
                         <li>Bachelor of Information and Communication Technology.</li>
@@ -140,8 +190,8 @@
         <hr>
         <!-- Experience Section Begins -->
         <div class="lr">
-            <h4>WORK EXPERIENCE</h4>
-                <div class="edu ct">
+            <h4><button onclick="workFunction()">WORK EXPERIENCE</button></h4>
+                <div class="edu ct" id="hWork">
                     <div class="ct"><h4 class="clr">TRAINEE FUNCTIONAL CONSULTANT</h4>
                         <h5 class="ct">Infosense Global Pvt Ltd | May 2022 - July 2022</h5>
                     <ul class="ct">
@@ -169,9 +219,9 @@
         <hr>
         <!-- Project Section Begins -->
         <div class="lr">
-            <h4>PROJECTS</h4>
+            <h4><button onclick="projectFunction()">PROJECTS</button></h4>
             <div>
-                <div class="edu ct">
+                <div class="edu ct" id="hProject">
                     <div><h4 class="clr">(1) YOLO Based Object Detection and Counting</h4>
                     <ul class="ct">
                         <li>In this project, we designed a system for detecting objects and counting the numbers of a particular object using Python and YOLO algorithm.</li>
@@ -189,3 +239,69 @@
         <!-- Project Section Ends -->
     </div>
 </div>
+
+<script>
+    function eduFunction() {
+            var edu = document.getElementById("hEdu");
+            if (edu.style.display === "none") {
+                edu.style.display = "flex";
+            } else {
+                edu.style.display = "none";
+            }
+        }
+
+        function workFunction() {
+            var work = document.getElementById("hWork");
+            if (work.style.display === "none") {
+                work.style.display = "flex";
+            } else {
+                work.style.display = "none";
+            }
+        }
+
+        function projectFunction() {
+            var proj = document.getElementById("hProject");
+            if (proj.style.display === "none") {
+                proj.style.display = "flex";
+            } else {
+                proj.style.display = "none";
+            }
+        }
+
+        function contactFunction() {
+            var contact = document.getElementById("hContact");
+            if (contact.style.display === "none") {
+                contact.style.display = "flex";
+                contact.style.flexDirection="column";
+            } else {
+                contact.style.display = "none";
+            }
+        }
+
+        function pskillsFunction() {
+            var ps = document.getElementById("hPs");
+            if (ps.style.display === "none") {
+                ps.style.display = "block";
+            } else {
+                ps.style.display = "none";
+            }
+        }
+
+        function certificateFunction() {
+            var certificate = document.getElementById("hCertificate");
+            if (certificate.style.display === "none") {
+                certificate.style.display = "block";
+            } else {
+                certificate.style.display = "none";
+            }
+        }
+
+        function achieveFunction() {
+            var achieve = document.getElementById("hAchievements");
+            if (achieve.style.display === "none") {
+                achieve.style.display = "block";
+            } else {
+                achieve.style.display = "none";
+            }
+        }
+</script>
