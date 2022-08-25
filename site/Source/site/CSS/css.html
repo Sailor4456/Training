@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -215,8 +216,8 @@
                     <em class="fa fa-bars"></em>
                 </a>
                 <a href="../index.html">HOME</a>
-                <a href="#" class="active">HTML</a>
-                <a href="../CSS/css.html">CSS</a>
+                <a href="../HTML/html.html">HTML</a>
+                <a href="#" class="active">CSS</a>
                 <a href="../Bootstrap/bootstrap.html">Bootstrap</a>
                 <a href="../Tailwind/tailwind.html">Tailwind</a>
                 <a href="../Javascript/js.html">Javascript</a>
@@ -239,14 +240,16 @@
                         <em class="fa fa-caret-down"></em>
                     </button>
                     <div class="dropdown-container">
-                        <button onclick="myFunction()">Prac 1</button>
-                        <button onclick="myFunction2()">Prac 2</button>
+                        <button onclick="exeOneFunc()">Prac 1</button>
+                        <button onclick="exeTwoFunc()">Prac 2</button>
+                        <button onclick="exeThreeFunc()">Prac 3</button>
+                        <button onclick="exeFourFunc()">Prac 4</button>
                     </div>
                     <button class="dropdown-btn">Assignment
                         <em class="fa fa-caret-down"></em>
                     </button>
                     <div class="dropdown-container">
-                        <button onclick="myFunction3()">Asisgn 1</button>
+                        <button onclick="assign1()">Asisgn 1</button>
                     </div>
                 </div>
 
@@ -254,29 +257,104 @@
                     <em class="fa fa-caret-down"></em>
                 </button>
                 <div class="dropdown-container">
+                    <button class="dropdown-btn">Practice
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="exeFive()">Prac 1</button>
+                        <button onclick="exeSix()">Prac 2</button>
+                        <button onclick="exeSeven()">Prac 3</button>
+                    </div>
                     <button class="dropdown-btn">Assignment
                         <em class="fa fa-caret-down"></em>
                     </button>
                     <div class="dropdown-container">
-                        <button onclick="myFunction4()">Asisgn 1</button>
+                        <button onclick="assign2()">Asisgn 1</button>
+                    </div>
+                </div>
+
+                <button class="dropdown-btn">Day/Module 3
+                    <em class="fa fa-caret-down"></em>
+                </button>
+                <div class="dropdown-container">
+                    <button class="dropdown-btn">Practice
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="exeEight()">Prac 1</button>
+                        <button onclick="exeNine()">Prac 2</button>
+                        <button onclick="exeTen()">Prac 3</button>
+                        <button onclick="exeEle()">Prac 4</button>
+                        <button onclick="exeTwelve()">Prac 5</button>
+                        <button onclick="exeThirteen()">Prac 6</button>
+                        <button onclick="exeFourteen()">Prac 7</button>
+                    </div>
+                    <button class="dropdown-btn">Assignment
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="assign3()">Asisgn 1</button>
+                    </div>
+                </div>
+
+                <button class="dropdown-btn">Day/Module 4
+                    <em class="fa fa-caret-down"></em>
+                </button>
+                <div class="dropdown-container">
+                    <button class="dropdown-btn">Practice
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="exeFifteen()">Prac 1</button>
+                        <button onclick="exeSixteen()">Prac 2</button>
+                        <button onclick="exeSeventeen()">Prac 3</button>
+                        <button onclick="exeEighteen()">Prac 4</button>
+                    </div>
+                    <button class="dropdown-btn">Assignment
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="assign4()">Asisgn 1</button>
+                    </div>
+                </div>
+
+                <button class="dropdown-btn">Day/Module 5
+                    <em class="fa fa-caret-down"></em>
+                </button>
+                <div class="dropdown-container">
+                    <button class="dropdown-btn">Assignment
+                        <em class="fa fa-caret-down"></em>
+                    </button>
+                    <div class="dropdown-container">
+                        <button onclick="assign5()">Asisgn 1</button>
                     </div>
                 </div>
             </div>
             <!--sidebar ends here-->
 
-            <!--body section's content starts here-->
+            <!--body section's content starts here  -->
             <div class="main">
                 <img src="/rxT.png" class="rxT" alt="site logo" style="height:500px; width:500px;" />
 
-                <iframe id="exeOne" class="iframe" src="exeOne.html"
-                    style="align-items:center; width: 100%; height: 100vh;" title="Module One - Practice Exercise One"></iframe>
-                <iframe id="exeTwo" class="iframe" src="exeTwo.html"
-                    style="align-items:center; width: 100%; height: 100vh;" title="Module One - Practice Exercise Two"></iframe>
-                <iframe id="assign1" class="iframe" src="assign1Form.html"
-                    style="align-items:center; width: 100%; height: 100vh;" title="Module One - Assignment One"></iframe>
+                <iframe id="exeOne" class="iframe" src="alignReport.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module One - Practice Exercise One"></iframe>
+                <iframe id="exeTwo" class="iframe" src="para.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module One - Practice Exercise Two"></iframe>
+                <iframe id="exeThreeFunc" class="iframe" src="h1h2.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module One - Assignment One"></iframe>
+                <iframe id="exeFourFunc" class="iframe" src="horizontal.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module One - Assignment One"></iframe>
+                <iframe id="assign1" class="iframe" src="resumeVideo.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module One - Assignment One"></iframe>
 
-                <iframe id="resume" class="iframe" src="resume.html"
-                    style="align-items:center; width: 100%; height: 100vh;" title="Module Two - Assignment One"></iframe>
+                <iframe id="assign2" class="iframe" src="basicLayout.html"
+                    style="align-items:center; width: 100%; height: 100vh;"
+                    title="Module Two - Assignment One"></iframe>
             </div>
             <!--body section's content ends here-->
         </div>
@@ -312,60 +390,130 @@
             });
         }
 
-        function myFunction() {
-            var x = document.getElementById("exeOne");
-            var y = document.getElementsByClassName("iframe");
-            var r = document.getElementsByClassName("rxT");
-            console.log(y[1]);
-            console.log(y[2]);
-            console.log(y[3]);
-            if (x.style.display === "none") {
+
+
+
+        var y = document.getElementsByClassName("iframe");
+        var r = document.getElementsByClassName("rxT");
+        function exeOneFunc() {
+            var p1 = document.getElementById("exeOne");
+            if (p1.style.display === "none") {
                 r[0].style.display = "none";
-                y[1, 2, 3].style.display = "none";
-                x.style.display = "block";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
+                p1.style.display = "block";
             } else {
-                x.style.display = "none";
-                y[1, 2, 3].style.display = "none";
+                p1.style.display = "none";
+                r[0].style.display = "block";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
             }
         }
-        function myFunction2() {
-            var x = document.getElementById("exeTwo");
-            var y = document.getElementsByClassName("iframe");
-            var r = document.getElementsByClassName("rxT");
-            if (x.style.display === "none") {
+        function exeTwoFunc() {
+            var p2 = document.getElementById("exeTwo");
+            if (p2.style.display === "none") {
                 r[0].style.display = "none";
-                y[0, 2, 3].style.display = "none";
-                x.style.display = "block";
+                y[0].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
+                p2.style.display = "block";
             } else {
-                x.style.display = "none";
-                y[0, 2, 3].style.display = "none";
+                p2.style.display = "none";
+                r[0].style.display = "block";
+                y[0].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
             }
         }
-        function myFunction3() {
-            var x = document.getElementById("assign1");
-            var y = document.getElementsByClassName("iframe");
-            var r = document.getElementsByClassName("rxT");
-            if (x.style.display === "none") {
+        function exeThreeFunc() {
+            var p3 = document.getElementById("exeThreeFunc");
+            if (p3.style.display === "none") {
                 r[0].style.display = "none";
-                y[0, 1, 3].style.display = "none";
-                x.style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
+                p3.style.display = "block";
             } else {
-                x.style.display = "none";
-                y[0, 1, 3].style.display = "none";
+                p3.style.display = "none";
+                r[0].style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
             }
         }
-        function myFunction4() {
-            var x = document.getElementById("resume");
-            var y = document.getElementsByClassName("iframe");
-            var r = document.getElementsByClassName("rxT");
-            if (x.style.display === "none") {
-                console.log(x.style.display);
+        function exeFourFunc() {
+            var p4 = document.getElementById("exeFourFunc");
+            if (p4.style.display === "none") {
                 r[0].style.display = "none";
-                y[0, 1, 2].style.display = "none";
-                x.style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
+                p4.style.display = "block";
             } else {
-                x.style.display = "none";
-                y[0, 1, 2].style.display = "none";
+                p4.style.display = "none";
+                r[0].style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[4].style.display = "none";
+                y[5].style.display = "none";
+            }
+        }
+
+        function assign1() {
+            var a1 = document.getElementById("assign1");
+            if (a1.style.display === "none") {
+                r[0].style.display = "none";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[5].style.display = "none";
+                a1.style.display = "block";
+            } else {
+                a1.style.display = "none";
+                r[0].style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[5].style.display = "none";
+            }
+        }
+        function assign2() {
+            var a2 = document.getElementById("assign2");
+            if (a2.style.display === "none") {
+                r[0].style.display = "none";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
+                a2.style.display = "block";
+            } else {
+                a2.style.display = "none";
+                r[0].style.display = "block";
+                y[0].style.display = "none";
+                y[1].style.display = "none";
+                y[2].style.display = "none";
+                y[3].style.display = "none";
+                y[4].style.display = "none";
             }
         }
     </script>
