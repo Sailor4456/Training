@@ -319,16 +319,16 @@
             var p1 = document.getElementById("exeOne");            
             if (p1.style.display === "none") {
                 r[0].style.display = "none";
-                y[1].style.display = "none";
-                y[2].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
                 p1.style.display = "block";
             } else {
                 p1.style.display = "none";
                 r[0].style.display = "block";
-                y[1].style.display = "none";
-                y[2].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
 
             }
         }
@@ -336,48 +336,48 @@
             var p2 = document.getElementById("exeTwo");
             if (p2.style.display === "none") {
                 r[0].style.display = "none";
-                y[0].style.display = "none";
-                y[2].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
                 p2.style.display = "block";
             } else {
                 p2.style.display = "none";
                 r[0].style.display = "block";
-                y[0].style.display = "none";
-                y[2].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
             }
         }
         function assign1() {
             var a1 = document.getElementById("assign1");
             if (a1.style.display === "none") {
                 r[0].style.display = "none";
-                y[1].style.display = "none";
-                y[0].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
                 a1.style.display = "block";
             } else {
                 a1.style.display = "none";
                 r[0].style.display = "block";
-                y[1].style.display = "none";
-                y[0].style.display = "none";
-                y[3].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
             }
         }
         function assign2() {
             var a2 = document.getElementById("resume");
             if (a2.style.display === "none") {
                 r[0].style.display = "none";
-                y[1].style.display = "none";
-                y[2].style.display = "none";
-                y[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
                 a2.style.display = "block";
             } else {
                 a2.style.display = "none";
                 r[0].style.display = "block";
-                y[1].style.display = "none";
-                y[2].style.display = "none";
-                y[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
             }
         }
     </script>
