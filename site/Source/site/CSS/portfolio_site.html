@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML @Radixweb</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sidenav {
+            background-color: #111;
+            padding-top: 20px;
+            width: 200px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidenav button {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .sidenav button:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            font-size: 20px;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            max-width: 70%;
+            margin: auto;
+        }
+
+        /* Add an active class to the active dropdown button */
+        .active {
+            background-color: green;
+            color: white;
+        }
+
+        .iframe {
+            display: none;
+            margin-top: 50px;
+        }
+
+        .rxT {
+            display: block;
+            margin-top: 50px;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .sidenav {
+                padding: 0px;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .main {
+                max-width: 80%;
+                padding: 0;
+                margin: auto;
+                display: block;
+                height: 100vh;
+            }
+        }
+
+        .sideOne {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--entire body starts here-->
+    <div class="container">
+        <!--sidebar starts here-->
+        <div class="sidenav">
+            <div class="sideOne">
+                <img src="/rxT.png" alt="site logo" style="height:100px; width:100px;" />
+                <h4 style="color: white;">Vipul Vaghela</h4>
+                <h3 style="color: white;">Software Engineer</h3>
+            </div>
+            <div class="sideTwo">
+                <button onclick="edu()">Education</button>
+
+                <button onclick="work()">Work Experience</button>
+
+                <button onclick="project()">Projects</button>
+
+                <button onclick="contact()">Contact</button>
+
+                <button onclick="ps()">Personal Skills</button>
+
+                <button onclick="certificate()">Certifications</button>
+            </div>
+        </div>
+        <!--sidebar ends here-->
+
+        <!--body section's content starts here  -->
+        <div class="main">
+            <div id="default" class="rxT">
+                <h4>Introduction:</h4>
+                <hr/>
+                <p>To work as a Software Engineer applying my knowledge in the field of testing, designing, and
+                    maintenance to cater to the specific needs of the people. I wish to work in a team of motivated
+                    individuals who wish to work towards the advancement of the company and its goals.</p>
+            </div>
+
+            <div id="edu" class="iframe">
+                <h4 style="text-align: center;">EDUCATION</h4><hr/>
+                <div>
+                    <h4 class="clr">PANDIT DEENDAYAL ENERGY UNIVERSITY.</h4>
+                    <ul class="ct">
+                        <li>Bachelor of Information and Communication Technology.</li>
+                        <li>CGPA : 10.00</li>
+                        <li>2019-2022</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="clr">GOVT. POLYTECHNIC GANDHINAGAR</h4>
+                    <ul class="ct">
+                        <li>Diploma in Information Technology</li>
+                        <li>CGPA : 10.00</li>
+                        <li>2019-2022</li>
+                    </ul>
+                </div>
+                <div style="padding-right: 40px;">
+                    <h4 class="clr">K. V. JETPUR</h4>
+                    <ul class="ct">
+                        <li>Secondary (Class-X)</li>
+                        <li>CGPA : 10.00</li>
+                        <li>2019-2022</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="work" class="iframe">
+                <h4 style="text-align: center;">WORK EXPERIENCE</h4><hr/>
+                <div class="ct">
+                    <h4 class="clr">TRAINEE FUNCTIONAL CONSULTANT</h4>
+                    <h5 class="ct">Infosense Global Pvt Ltd | May 2022 - July 2022</h5>
+                    <ul class="ct">
+                        <li>Got trained to understand the business requirements and provide technical solutions to
+                            issues with different business modules, Inventory, Purchasing and Order Management
+                            inside Oracle E-Business Suite, an ERP system.</li>
+                    </ul>
+                </div>
+
+                <div class="ct">
+                    <h4 class="clr">QUALITY ANALYST</h4>
+                    <h5 class="ct">Tech Mahindra | DEC 2021 - JAN 2022</h5>
+                    <ul class="ct">
+                        <li>Performed ad-hoic testings and identified issues that were not part of test plans.</li>
+                        <li>Created testing artifacts such as test scenarios, test cases.</li>
+                    </ul>
+                </div>
+
+                <div class="ct">
+                    <h4 class="clr">REACT NATIVE - INTERN</h4>
+                    <h5 class="ct">Techno Mates Solutions | Jan 2022 - April 2022 </h5>
+                    <ul class="ct">
+                        <li>Got trained for react native and performed few tasks of building static and dynamic
+                            pages of an android application for different modules of the project.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="project" class="iframe">
+                <h4 style="text-align: center;">PROJECTS</h4><hr/>
+                <div>
+                    <h4 class="clr">(1) YOLO Based Object Detection and Counting</h4>
+                    <ul class="ct">
+                        <li>In this project, we designed a system for detecting objects and counting the numbers
+                            of a particular object using Python and YOLO algorithm.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="clr">(2) Disk Scheduling Algorithm(Website)</h4>
+                    <ul class="ct">
+                        <li>It was a web-based project with functionalities to calculate and understand
+                            different types of disk scheduling algorithms. Developed using HTML, CSS and
+                            Javascript.</li>
+                        <li>LIVE: htpps://dsa-website.herokuapp.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contact" class="iframe">
+                <h4 style="text-align: center;">CONTACT</h4><hr/>
+                <span><strong>P:</strong> <em>+91 7405146948</em></span><br />
+                <span><strong>E:</strong> <em>info.vipul1201@gmail.com</em></span><br />
+                <span><strong>LinkedIn:</strong> <em>https://www.linkedin.com/in/vipul-vaghela/</em></span>
+            </div>
+
+            <div id="ps" class="iframe">
+                <h4 style="text-align: center;">PERSONAL SKILLS</h4><hr/>
+                <ul>
+                    <li>HTML5-CSS3</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PHP</li>
+                    <li>REACT JS</li>
+                    <li>REACT NATIVE</li>
+                    <li>GIT</li>
+                    <li>MYSQL (XAMPP)</li>
+                    <li>ORACLE APPS R12 (ERP)</li>
+                    <li>MS EXCEL</li>
+                </ul>
+            </div>
+
+            <div id="c" class="iframe">
+                <h4 style="text-align: center;">CERTIFICATIONS</h4><hr/>
+                <div id="hCertificate">NPTEL
+                    <ul class="ps ">
+                        <li>The joy of Computing using Python (Jan-April 2020)</li>
+                        <li>IIT Madras, India</li>
+                        <li>Scored 95%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--body section's content ends here-->
+
+    </div>
+    <!--entire body ends here-->
+
+
+    <script>
+
+        const y = document.getElementsByClassName("iframe");
+        var r = document.getElementsByClassName("rxT");
+        function edu() {
+            var p1 = document.getElementById("edu");
+            if (p1.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                p1.style.display = "block";
+            } else {
+                p1.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+        function work() {
+            var p2 = document.getElementById("work");
+            if (p2.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                p2.style.display = "block";
+            } else {
+                p2.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+        function project() {
+            var p3 = document.getElementById("project");
+            if (p3.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                p3.style.display = "block";
+            } else {
+                p3.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+        function contact() {
+            var p4 = document.getElementById("contact");
+            if (p4.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                p4.style.display = "block";
+            } else {
+                p4.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+
+        function ps() {
+            var a1 = document.getElementById("ps");
+            if (a1.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                a1.style.display = "block";
+            } else {
+                a1.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+
+        function certificate() {
+            var c1 = document.getElementById("c");
+            if (c1.style.display === "none") {
+                r[0].style.display = "none";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+                c1.style.display = "block";
+            } else {
+                c1.style.display = "none";
+                r[0].style.display = "block";
+                for (let i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

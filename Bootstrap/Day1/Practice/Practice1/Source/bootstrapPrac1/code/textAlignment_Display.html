@@ -10,73 +10,63 @@
 
 <body>
     <header>
-        
-            <div style="display: flex;">
-                <div class="col-md-3">
+
+        <div style="display: flex;">
+            <div class="col-md-3">
                 <button class="btn">
                     <a href="../index.html" role="button" class="btn btn-dark">1: HOME</a>
                 </button>
             </div>
             <div class="col-md-6">
-            <h1 class="display-3 text-center my-4">First</h1>
-        </div>
+                <h1 class="display-3 text-center my-4">First</h1>
+            </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <!--NOTE: bootstrap 5 changes: data-bs-toggle instead of data-toggle.-->
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            2: utilities
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="basic_typography.html">2.2 Basic Typography</a>
-                            <a class="dropdown-item active" href="#">2.3 Text Alignment and Display</a>
-                            <a class="dropdown-item" href="#">2.4 Basic</a>
-                        </div>
+                <!--NOTE: Changes in class for button width!-->
+                <div class="dropdown d-grid gap-2 col-md-3">
+                    <!--NOTE: bootstrap 5 changes: data-bs-toggle instead of data-toggle.-->
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        2: utilities
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="basic_typography.html">2.2 Basic Typography</a>
+                        <a class="dropdown-item active" href="#">2.3 Text Alignment and Display</a>
+                        <a class="dropdown-item" href="#">2.4 Basic</a>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-warning btn-block dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown">
-                            3: CSS Components
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">3.2 Buttons</a>
-                            <a class="dropdown-item" href="#">3.3 Basic</a>
-                            <a class="dropdown-item" href="#">3.4 Basic</a>
-                        </div>
+                <div class="dropdown d-grid gap-2 col-md-3">
+                    <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        3: CSS Components
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">3.2 Buttons</a>
+                        <a class="dropdown-item" href="#">3.3 Basic</a>
+                        <a class="dropdown-item" href="#">3.4 Basic</a>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-success btn-block dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown">
-                            4: Grid and Flexbox
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">4.2 grids</a>
-                            <a class="dropdown-item" href="#">4.3 Basic</a>
-                            <a class="dropdown-item" href="#">4.4 Basic</a>
-                        </div>
+                <div class="dropdown d-grid gap-2 col-md-3">
+                    <button class="btn btn-success btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        4: Grid and Flexbox
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">4.2 grids</a>
+                        <a class="dropdown-item" href="#">4.3 Basic</a>
+                        <a class="dropdown-item" href="#">4.4 Basic</a>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-danger btn-block dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown">
-                            5: Javascript Widgets
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5.2 grids</a>
-                            <a class="dropdown-item" href="#">5.3 Basic</a>
-                            <a class="dropdown-item" href="#">5.4 Basic</a>
-                        </div>
+                <div class="dropdown d-grid gap-2 col-md-3">
+                    <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        5: Javascript Widgets
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">5.2 grids</a>
+                        <a class="dropdown-item" href="#">5.3 Basic</a>
+                        <a class="dropdown-item" href="#">5.4 Basic</a>
                     </div>
                 </div>
             </div>
@@ -85,8 +75,14 @@
     </header>
 
     <!-- <section> -->
-        <div class="container">
-        </div>
+    <div class="container">
+        <p class="text-justify">Justified Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum."</p>
+    </div>
     <!-- </section> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
