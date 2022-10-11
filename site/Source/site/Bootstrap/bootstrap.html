@@ -4,7 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>HTML @Radixweb</title>
+    <title>Bootstrap</title>
+    <link rel="icon" href="../CSS/public/evIcon.png">
     <style>
         body {
             margin: 0;
@@ -206,7 +207,7 @@
         <!--header starts here-->
         <div class="contain">
             <!--header logo starts here-->
-            <div class="logo"><img src="../public/rx.jpg" alt="logo here" height="70px" width="70px"
+            <div class="logo"><img src="../public/ev.png" alt="logo here" height="70px" width="70px"
                     style="margin-left: 25px;" /></div>
             <!--header logo ends here-->
 
@@ -219,10 +220,8 @@
                 <a href="../HTML/html.html">HTML</a>
                 <a href="../CSS/css.html">CSS</a>
                 <a href="#" class="active">Bootstrap</a>
-                <a href="../Tailwind/tailwind.html">Tailwind</a>
                 <a href="../Javascript/js.html">Javascript</a>
-                <a href="../Typescript/typescript.html">Typescript</a>
-                <a href="../nodejs/nodejs.html">Node JS</a>
+                <a href="">ReactJs</a>
             </div>
             <!--header menu ends here-->
         </div>
@@ -232,106 +231,17 @@
         <div class="siteContent">
             <!--sidebar starts here-->
             <div class="sidenav">
-                <button class="dropdown-btn">Day/Module 1
-                    <em class="fa fa-caret-down"></em>
-                </button>
-                <div class="dropdown-container">
-                    <button class="dropdown-btn">Practice
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="exeOneFunc()">Prac 1</button>
-                    </div>
-                    <button class="dropdown-btn">Assignment
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="assign1()">Asisgn 1</button>
-                    </div>
-                </div>
-
-                <button class="dropdown-btn">Day/Module 2
-                    <em class="fa fa-caret-down"></em>
-                </button>
-                <div class="dropdown-container">
-                    <button class="dropdown-btn">Practice
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="exeFive()">Prac 1</button>
-                    </div>
-                    <button class="dropdown-btn">Assignment
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="assign2()">Asisgn 1</button>
-                    </div>
-                </div>
-
-                <button class="dropdown-btn">Day/Module 3
-                    <em class="fa fa-caret-down"></em>
-                </button>
-                <div class="dropdown-container">
-                    <button class="dropdown-btn">Assignment
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="assign3()">Asisgn 1</button>
-                    </div>
-                </div>
-
-                <button class="dropdown-btn">Day/Module 4
-                    <em class="fa fa-caret-down"></em>
-                </button>
-                <div class="dropdown-container">
-                    <button class="dropdown-btn">Practice
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="exeFifteen()">Prac 1</button>
-                    </div>
-                </div>
-
-                <button class="dropdown-btn">Day/Module 5
-                    <em class="fa fa-caret-down"></em>
-                </button>
-                <div class="dropdown-container">
-                    <button class="dropdown-btn">Assignment
-                        <em class="fa fa-caret-down"></em>
-                    </button>
-                    <div class="dropdown-container">
-                        <button onclick="assign5()">Asisgn 1</button>
-                    </div>
-                </div>
+                <button class="dropdown-container" onclick="exeOneFunc()">View Bootstrap</button>
             </div>
             <!--sidebar ends here-->
 
             <!--body section's content starts here  -->
             <div class="main">
-                <img src="/rxT.png" class="rxT" alt="site logo" style="height:500px; width:500px;" />
+                <img src="/ev.png" class="rxT" alt="site logo" style="height:500px; width:500px;" />
 
-                <iframe id="exeOne" class="iframe" src="alignReport.html"
+                <iframe id="exeOne" class="iframe" src="bootstrapPrac1.html"
                     style="align-items:center; width: 100%; height: 100vh;"
                     title="Module One - Practice Exercise One"></iframe>
-                <iframe id="exeTwo" class="iframe" src="para.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module One - Practice Exercise Two"></iframe>
-                <iframe id="exeThreeFunc" class="iframe" src="h1h2.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module One - Assignment One"></iframe>
-                <iframe id="exeFourFunc" class="iframe" src="horizontal.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module One - Assignment One"></iframe>
-                <iframe id="assign1" class="iframe" src="resumeVideo.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module One - Assignment One"></iframe>
-
-                <iframe id="assign2" class="iframe" src="basicLayout.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module Two - Assignment One"></iframe>
-                <iframe id="resumeClick" class="iframe" src="onclickResume.html"
-                    style="align-items:center; width: 100%; height: 100vh;"
-                    title="Module Two - Assignment One"></iframe>
             </div>
             <!--body section's content ends here-->
         </div>
@@ -382,104 +292,6 @@
                 p1.style.display = "block";
             } else {
                 p1.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-        function exeTwoFunc() {
-            var p2 = document.getElementById("exeTwo");
-            if (p2.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                p2.style.display = "block";
-            } else {
-                p2.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-        function exeThreeFunc() {
-            var p3 = document.getElementById("exeThreeFunc");
-            if (p3.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                p3.style.display = "block";
-            } else {
-                p3.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-        function exeFourFunc() {
-            var p4 = document.getElementById("exeFourFunc");
-            if (p4.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                p4.style.display = "block";
-            } else {
-                p4.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-
-        function assign1() {
-            var a1 = document.getElementById("assign1");
-            if (a1.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                a1.style.display = "block";
-            } else {
-                a1.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-        function assign2() {
-            var a2 = document.getElementById("assign2");
-            if (a2.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                a2.style.display = "block";
-            } else {
-                a2.style.display = "none";
-                r[0].style.display = "block";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-            }
-        }
-
-        function resumeClick() {
-            var ae = document.getElementById("resumeClick");
-            if (ae.style.display === "none") {
-                r[0].style.display = "none";
-                for (let i = 0; i < y.length; i++) {
-                    y[i].style.display = "none";
-                }
-                ae.style.display = "block";
-            } else {
-                ae.style.display = "none";
                 r[0].style.display = "block";
                 for (let i = 0; i < y.length; i++) {
                     y[i].style.display = "none";
