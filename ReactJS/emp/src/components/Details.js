@@ -56,8 +56,8 @@ class EmpDetails extends Component {
                     <th>Department</th>
                     <th>Position</th>
                     <th>Salary</th>
-                    <th>UPDATE</th>
-                    <th>DELETE</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                     </tr>
                         {this.state.list.map((item, index) => {
                             return <tr key={index}>
